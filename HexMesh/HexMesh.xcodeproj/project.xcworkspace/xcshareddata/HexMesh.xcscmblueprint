@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "67CB8E5FC60A081881155621CA2F0637E6C31889",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E53C5F76C73D6A21CF739B16E049016E9F6AEC52" : 9223372036854775807,
+    "67CB8E5FC60A081881155621CA2F0637E6C31889" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "339B6298-99E2-4F59-BE3E-2CFB0680D65C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E53C5F76C73D6A21CF739B16E049016E9F6AEC52" : "",
+    "67CB8E5FC60A081881155621CA2F0637E6C31889" : "HexMesh\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "HexMesh",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "HexMesh.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andrewwiskus\/HexMesh-iOS-Game.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "67CB8E5FC60A081881155621CA2F0637E6C31889"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/andrewwiskus\/SwiftAdventures.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E53C5F76C73D6A21CF739B16E049016E9F6AEC52"
+    }
+  ]
+}
