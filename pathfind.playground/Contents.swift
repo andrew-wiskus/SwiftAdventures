@@ -90,16 +90,49 @@ func findPossibleMoves(for state: GameState) -> [XY] {
 }
 
 var moveList = [(index: Int, move: XY)]()
-
-func buildMoveList(from moves: [(index: Int, gameState: GameState)]) -> [(index: Int, gameState: GameState)] {
-    
-    var moveList = moves
-    let state = moves[moves.count - 1].gameState
-    let index = moves[moves.count - 1].index
-    
-    let possibleNextMoves = findPossibleMoves(for: state)
-    
-    30
-    return moveList
+var tapsToWin = 0
+for i in level1.flatMap({$0}) {
+    tapsToWin += i
 }
+
+func buildMoveList(from moves: [XY], using map: [[Int]]) -> [XY]? {
+    
+    var mapState = map
+    
+    
+    for (index, move) in moves.enumerated() {
+        
+        if index != 0 {
+        mapState[move.y - 1][move.x - 1] += -1
+        }
+    }
+    
+    let possibleNextMoves = findPossibleMoves(for: GameState(pos: moves[moves.count - 1], map: mapState))
+    
+    if (possibleNextMoves.count == 0) {
+        print("you lose")
+        return nil
+    }
+    
+    for nextMove in possibleNextMoves {
+        var next = moves
+        next.append(nextMove)
+        if next.count == tapsToWin - 1{
+            print("you win!")
+            return nil
+        } else {
+        
+        buildMoveList(from: next, using: map)
+        }
+    }
+    
+    return moves
+}
+
+buildMoveList(from: [XY(x: 0, y:0 )], using: level1)
+
+
+//________1,1_________
+//----1,2-----2,1-----
+//-2,2---2,3-
 
